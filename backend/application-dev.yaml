@@ -1,0 +1,11 @@
+cyoa:
+  accessToken:
+    validity: P1D
+    signingKey: changeThis
+  login:
+    google:
+      authUri: http://localhost:8080/api/login/fake/google/auth
+      tokenUri: http://localhost:8080/api/login/fake/google/token
+      clientId: myClientId
+      clientSecret: myClientSecret
+

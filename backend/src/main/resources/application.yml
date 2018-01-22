@@ -1,0 +1,41 @@
+server:
+    port: 8080
+spring:
+    profiles:
+        active: prod
+    jackson:
+        serialization:
+            indent_output: true
+            write_dates_as_timestamps: false
+            write_durations_as_timestamps: false
+        deserialization:
+            accept_single_value_as_array: true
+        default-property-inclusion: non_null
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp
+            suffix: .jsp
+management:
+    security:
+        enabled: false
+endpoints:
+  health:
+    enabled: true
+  beans:
+    enabled: true
+  configprops:
+    enabled: true
+  autoconfig:
+    enabled: true
+  auditevents:
+    enabled: true
+  env:
+    enabled: true
+  logfile:
+    enabled: true
+  loggers:
+    enabled: true
+  mappings:
+    enabled: true
+  metrics:
+    enabled: true

@@ -1,0 +1,5 @@
+# Base Query type
+type Query {
+    # The API version
+    version: String!
+}
